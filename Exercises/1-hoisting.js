@@ -1,9 +1,11 @@
 'use strict';
 
 const fn = () => {
-    console.log(hoisted);
-    var hoisted = 6;
-    console.log(hoisted);
+  //should output undefined
+  console.log(hoisted);
+  var hoisted = 6;
+  //should output 6
+  console.log(hoisted);
 };
 
 module.exports = { fn };
